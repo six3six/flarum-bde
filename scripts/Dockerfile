@@ -11,13 +11,8 @@ WORKDIR /root/script
 ADD install_composer.sh ./
 RUN ./install_composer.sh
 
-# Install flarum
-WORKDIR /var/www/html
-RUN composer create-project flarum/flarum . --stability=beta
-RUN php --ini
-RUN chown www-data . -R
-
 # Setup apache
+WORKDIR /
 RUN rm /etc/apache2/sites-available/*
 RUN rm /etc/apache2/sites-enabled/*
 ADD flarum.conf /etc/apache2/sites-available/

@@ -1,4 +1,4 @@
 db/*
-flarum/*
+data/*
 scripts/var.env
 .idea

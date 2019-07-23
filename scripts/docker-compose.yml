@@ -9,7 +9,7 @@ services:
     env_file:
       - var.env
     volumes:
-      - ../flarum:/var/www/html
+      - ../data/:/var/www/html/
 
   db:
     image: mariadb
