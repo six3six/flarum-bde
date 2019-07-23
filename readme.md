@@ -1,4 +1,4 @@
-#Flarum docker
+# Flarum docker
 ## Requirements
 - var.env :
     - MYSQL_RANDOM_ROOT_PASSWORD
