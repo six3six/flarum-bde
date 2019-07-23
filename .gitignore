@@ -1,0 +1,4 @@
+db/*
+flarum/*
+scripts/var.env
+.idea
