@@ -1,6 +1,7 @@
 #!/bin/bash
 
 docker-compose down
+
 if [[ -z "$(ls -A ../data)" ]]; then
     read -r -p "Wipe data ? [y/N] " response
     if [[ "$response" =~ ^([yY][eE][sS]|[yY])+$ ]]
