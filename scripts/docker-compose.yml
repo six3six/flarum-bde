@@ -17,4 +17,3 @@ services:
       - var.env
     volumes:
       - ../db:/var/lib/mysql
-
