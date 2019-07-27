@@ -8,7 +8,6 @@ RUN docker-php-ext-install gd pdo_mysql tokenizer curl zip
 # Install composer
 RUN mkdir /root/script
 WORKDIR /root/script
-ADD install_requirements.sh ./
 ADD install_composer.sh ./
 RUN ./install_composer.sh
 
