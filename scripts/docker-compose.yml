@@ -15,5 +15,3 @@ services:
     image: mariadb
     env_file:
       - var.env
-    volumes:
-      - ../db:/var/lib/mysql
