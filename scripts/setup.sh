@@ -2,7 +2,7 @@
 
 docker-compose down
 
-if [[ -z "$(ls -A ../data)" ]]; then
+if [[ -f "../data" ]]; then
     read -r -p "Wipe data ? [y/N] " response
     if [[ "$response" =~ ^([yY][eE][sS]|[yY])+$ ]]
     then
@@ -12,7 +12,7 @@ else
     mkdir ../data
 fi
 
-if [[ -z "$(ls -A ../db)" ]]; then
+if [[ -f "../db" ]]; then
     read -r -p "Wipe db ? [y/N] " response
     if [[ "$response" =~ ^([yY][eE][sS]|[yY])+$ ]]
     then
